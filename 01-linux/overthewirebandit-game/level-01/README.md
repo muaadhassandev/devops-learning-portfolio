@@ -18,7 +18,6 @@ To explicitly tell the shell that `-` is a file in the current directory, I used
 
 ## Command
 
-bash
 cat ./-
 
 
