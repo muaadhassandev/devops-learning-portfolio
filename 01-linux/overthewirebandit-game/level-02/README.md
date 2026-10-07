@@ -6,20 +6,18 @@ Find the password for the next level.
 
 ## Problem
 
-The password is stored in a file named `spaces in this filename` in the home directory.
+The password is stored in a file named `--spaces in this filename--` in the home directory.
 
-The challenge is that the filename contains spaces.
+The challenge is that the filename contains spaces and begins with `--`.
 
 ## Approach
 
-I first listed the files in the home directory and identified the filename containing spaces.
+I first listed the contents of the directory and identified the file containing spaces.
 
-I then used the correct syntax to treat the entire filename as a single argument.
+Because the filename contains spaces, I used quotes to treat the entire filename as a single argument.
+
+I also used `./` to explicitly specify that the file was located in the current directory.
 
 ## Command
 
-
-
-## What I Learned
-
-I learned how Linux handles filenames containing spaces and how to reference them correctly from the command line.
+cat "./--spaces in this filename--"
