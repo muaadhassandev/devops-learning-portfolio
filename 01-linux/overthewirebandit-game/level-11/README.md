@@ -8,15 +8,22 @@ Find the password for the next level.
 
 The password is stored in `data.txt`.
 
-The challenge is that the text has been encoded using ROT13, where each letter has been rotated by 13 positions.
+The contents of the file have been encoded using ROT13, which replaces each letter with another letter.
 
 ## Approach
 
-I first inspected the contents of `data.txt` and identified that the text had been transformed using ROT13.
+I first viewed the contents of `data.txt` and identified that the text was encoded using ROT13.
 
-I then used a command-line tool to decode the text and recover the original message.
+I used the ROT13 feature in CyberChef to decode the text.
+
+I then copied the encoded text from the terminal into CyberChef, selected the ROT13 operation, and used the decoded output to obtain the password.
 
 ## Command
 
-```bash
-tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt
+cat data.txt
+
+## What I Learned
+
+I learned how ROT13 encoding works and how CyberChef can be used to decode encoded text.
+
+This level also showed me how useful tools like CyberChef can be when working with encoded data.
