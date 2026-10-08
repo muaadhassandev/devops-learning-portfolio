@@ -1,7 +1,3 @@
-
-### Level 15
-
-```markdown
 # Bandit Level 15
 
 ## Objective
@@ -10,13 +6,17 @@ Find the password for the next level.
 
 ## Problem
 
-The password must be submitted to a service running on localhost using an encrypted SSL/TLS connection on port `30001`.
+The password for the next level is obtained by connecting to a service running on `localhost` on port `30001`.
+
+Unlike the previous level, this service requires an SSL/TLS encrypted connection.
 
 ## Approach
 
-I connected to the service using an SSL/TLS connection.
+I used the `openssl` command to establish a secure SSL/TLS connection to the service running on port `30001`.
 
-I then provided the current password to the service and received the password for the next level.
+After the connection was established, I entered the password obtained from Level 14.
+
+The service then returned the password for the next level.
 
 ## Command
 
